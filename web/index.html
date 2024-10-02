@@ -1,0 +1,63 @@
+<!-- https://www.w3schools.com/tags/ref_html_dtd.asp -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Car Showroom</title>
+    <meta name="author" content="OneCodes">
+    <link rel="stylesheet" href="style.css">
+    <meta name='url' content='http://juodukai.lt'>
+    <link rel="icon" href="photos/spinning-duck.gif" type="image/gif">
+</head>
+<body>
+    <header class="nothero">
+        <div class="nothero-content">
+            <h1>Sveiki atvykę į BMW saloną<h1>
+            <p>Ištirkite mūsų prabangių automobilių asortimentą ir atraskite sau tinkamiausią variantą.</p>
+            <a href="cars/cars.html" class="BRR-knopke">Peržiūrėkite mūsų automobilius</a>
+        </div>
+    </header>
+
+    <section class="kazkas-naujo">
+        <div class="kazkas-naujo2">
+            <h2>Aukščiausios vairavimo mašinos</h2>
+            <p>Patirkite vairavimo BMW įspūdžius. Nuo elegantiškų sedanų iki galingų visureigių - turime kažką kiekvienam.</p>
+        </div>
+        <div class="kazkas-naujo2">
+            <h2>Ekologiška technologija</h2>
+            <p>Išbandykite mūsų hibridinius ir elektrinius modelius, sukurtus maksimaliam našumui ir tvarumui.</p>
+        </div>
+        <div class="kazkas-naujo2">
+            <h2>Specialūs pasiūlymai</h2>
+            <p>Atraskite išskirtinius pasiūlymus ir finansavimo galimybes, kad šiandien vairuotumėte savo svajonių automobilį.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 OneCodes. #Mano website? <span id="duck">🦆</span></p>
+        <p>&copy; 2024 <a href="cars/cars.html">Code for the website!</a></p>
+    </footer>
+
+    <audio id="quack-sound" src="quack/quack.mp3"></audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var duck = document.getElementById("duck");
+            var quack = document.getElementById("quack-sound");
+            if (duck && quack) {
+                quack.addEventListener("canplaythrough", function() {
+                    duck.addEventListener("click", function() {
+                        quack.play();
+                    });
+                });
+                quack.addEventListener("error", function(e) {
+                    console.error("er:", e);
+                });
+            }
+        });
+    </script>
+    
+</body>
+</html>

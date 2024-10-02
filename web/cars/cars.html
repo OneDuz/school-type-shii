@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navigacija kaip nezinau ko realiai -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="bra-knopke">Grįžti atgal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="text-align:center; margin: 20px 0;">Mūsų Automobilių Kolekcija</h2>
+
+    <div class="masinos-gridai">
+        <div class="masinos-krota" onclick="paziurekmasinahaha('bmw-320d')">
+            <img src="https://iili.io/dDttb87.png" alt="BMW 320d">
+            <h3>BMW 320d xDrive Sedan MHEV</h3>
+            <p class="daugiau-info">Prabangus sedanas, derinantis stilių, našumą ir pažangias technologijas.</p>
+            <p class="kaina-brangu">69,500 €</p>
+            <button class="kazinau-knpke">Daugiau informacijos</button>
+        </div>
+    
+        <div class="masinos-krota" onclick="paziurekmasinahaha('bmw-520d')">
+            <img src="https://iili.io/dDtbBf4.png" alt="BMW 520d">
+            <h3>BMW 520d xDrive Touring</h3>
+            <p class="daugiau-info">Universalus touring automobilis, puikus ilgoms kelionėms ir šeimos išvykoms.</p>
+            <p class="kaina-brangu">85,990 €</p>
+            <button class="kazinau-knpke">Daugiau informacijos</button>
+        </div>
+
+        <div class="masinos-krota" onclick="paziurekmasinahaha('bmw-x3')">
+            <img src="https://iili.io/dDDdOn1.png" alt="BMW X3 xDrive20d MHEV">
+            <h3>BMW X3 xDrive20d MHEV</h3>
+            <p class="daugiau-info">SUV, derinantis praktiškumą su įdomia vairavimo patirtimi.</p>
+            <p class="kaina-brangu">75,000 €</p>
+            <button class="kazinau-knpke">Daugiau informacijos</button>
+        </div>
+
+        <div class="masinos-krota" onclick="paziurekmasinahaha('bmw-xm')">
+            <img src="https://iili.io/dDtyFzF.png" alt="BMW XM">
+            <h3>BMW XM</h3>
+            <p class="daugiau-info">Aukštos našumo SUV, siūlantis prabangą ir pažangias funkcijas.</p>
+            <p class="kaina-brangu">169,990 €</p>
+            <button class="kazinau-knpke">Daugiau informacijos</button>
+        </div>
+
+        <div class="masinos-krota" onclick="paziurekmasinahaha('bmw-m5')">
+            <img src="https://iili.io/dDDFuaa.png" alt="BMW M5 Touring">
+            <h3>BMW M5 Touring</h3>
+            <p class="daugiau-info">Galingas touring automobilis, puikiai tinkantis tiek kasdieniam, tiek sportiniam vairavimui.</p>
+            <p class="kaina-brangu">111,024 €</p>
+            <button class="kazinau-knpke">Daugiau informacijos</button>
+        </div>
+    </div>
+
+    <div class="info-gal" id="info-gal">
+        <img id="masinos-fotke" src="" alt="Masinos fotkitesss">
+        <h3 id="oho-masinos-name"></h3>
+        <p id="brangu-blyn"></p>
+        <p id="info-gal-text"></p>
+        <button class="bye-bye" onclick="bYEBYE()">Uždaryti</button>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
