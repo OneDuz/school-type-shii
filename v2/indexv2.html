@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Car Showroom</title>
+    <meta name="author" content="OneCodes">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta name='url' content='http://juodukai.lt'>
+    <link rel="icon" href="photos/spinning-duck.gif" type="image/gif">
+    <style>
+        body {
+            background-image: url('photos/frame.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <header class="relative h-screen flex items-center justify-center text-center">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4">
+            <h1 class="text-6xl font-extrabold text-white mb-4">Sveiki atvykę į BMW saloną</h1>
+            <p class="text-lg text-gray-300 mb-8">Ištirkite mūsų prabangių automobilių asortimentą ir atraskite sau tinkamiausią variantą.</p>
+            <a href="cars/carsv2.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition">Peržiūrėkite mūsų automobilius</a>
+        </div>
+    </header>
+
+    <section class="py-16 bg-gray-800 bg-opacity-80">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold mb-4">Aukščiausios vairavimo mašinos</h2>
+                <p class="text-gray-300">Patirkite vairavimo BMW įspūdžius. Nuo elegantiškų sedanų iki galingų visureigių - turime kažką kiekvienam.</p>
+            </div>
+            <div class="text-center">
+                <h2 class="text-3xl font-bold mb-4">Ekologiška technologija</h2>
+                <p class="text-gray-300">Išbandykite mūsų hibridinius ir elektrinius modelius, sukurtus maksimaliam našumui ir tvarumui.</p>
+            </div>
+            <div class="text-center">
+                <h2 class="text-3xl font-bold mb-4">Specialūs pasiūlymai</h2>
+                <p class="text-gray-300">Atraskite išskirtinius pasiūlymus ir finansavimo galimybes, kad šiandien vairuotumėte savo svajonių automobilį.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="mb-4">&copy; 2024 OneCodes. #Mano website? <span id="duck" class="cursor-pointer">🦆</span></p>
+            <p>&copy; 2024 <a href="https://github.com/OneDuz/school-type-shii/tree/main/web" class="text-blue-400 hover:text-blue-600">Code for the website!</a></p>
+        </div>
+    </footer>
+
+    <audio id="quack-sound" src="quack/quack.mp3"></audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var duck = document.getElementById("duck");
+            var quack = document.getElementById("quack-sound");
+            if (duck && quack) {
+                quack.addEventListener("canplaythrough", function() {
+                    duck.addEventListener("click", function() {
+                        quack.play();
+                    });
+                });
+                quack.addEventListener("error", function(e) {
+                    console.error("er:", e);
+                });
+            }
+        });
+    </script>
+    
+</body>
+</html>
